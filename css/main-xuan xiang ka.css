@@ -1,0 +1,421 @@
+
+
+@charset "utf-8";
+@charset "gb2312";
+
+/*头部导航区域*/
+#header {
+  height:40px; 
+  background-color: #f0f0f0;
+  position: relative;
+  clear: both;
+}
+#header > .topbar {
+  height: 40px;
+  border-bottom: 1px solid #c0c0c0;
+  line-height: 40px;
+} 
+#header > .topbar >.container > .row > div+div {
+  border-left: 1px solid #c0c0c0;
+}
+#header .mobile-link {
+  font-size:12px;
+  color: #888;
+  
+}
+#header .mobile-link > img {
+  display: none;
+}
+#header .mobile-link:hover {
+  text-decoration: none;
+  display: block;
+}
+#header .mobile-link:hover >img {
+  
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -60px;
+  top:40px;
+  z-index: 1;
+}
+#header .icon-telephone::before {
+    content: "\e909";
+    font-size: 15px
+}
+#header > .topbar > .container > .row > div >.lianxi {
+  text-decoration: none;
+  font-size: 12px;
+  color: #888;
+  margin-left: 5px;
+}
+
+#header > .topbar > .container > .row > div {
+  height: 40px;
+  font-size: 12px;
+  color: #888;
+  
+} 
+#header > .topbar > .container > .row > div:nth-of-type(2n) {
+  
+  height: 40px;
+}
+
+#header .icon-icon {
+  font-size: 50px;
+  color: #e92323;
+  line-height: 50px;
+  vertical-align: middle;
+}
+
+#header .icon-logo {
+  font-size: 32px;
+  color: #333;
+  line-height: 50px;
+  vertical-align: middle;
+}
+/*============================top区域结束=*/
+
+/*===============轮播区域设置========*/
+/*媒体查询，什么时候不能用410px的图片，可以通过媒体查询的方式去控制*/
+@media (min-width: 768px) {
+/*这个表示的是当屏幕最小的宽度为768时候，强行使用410的图*/
+#main_lunbo > .carousel-inner > .item {
+    height: 410px;
+  }
+}
+
+#main_lunbo .carousel-inner {
+  margin-top:86px;
+}
+
+#main_lunbo > .carousel-inner > .item {
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:cover;
+}
+#main_lunbo > .carousel-inner > .item >img {
+  width: 100%;
+}
+/*===============轮播区域设置========*/
+/*================板块特色区域========*/
+#main_teshe {
+  padding: 20px 0;
+   border-bottom: 1px solid #c0c0c0;
+}
+ #main_teshe  .container .media  div {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /*background-color: pink;*/
+}
+#main_teshe h2,#main_teshe p {
+  margin-left: 40px;
+  margin-top: 12px;
+}
+
+ #main_teshe .icon-uniE907:before {
+              content: "\e907";
+}
+#main_yuyue .icon-uniE91D:before {
+    content: "\e91d";
+}
+#main_yuyue .icon-uniE906:before {
+    content: "\e906";
+}
+#main_yuyue .icon-uniE905:before {
+    content: "\e905";
+}
+#main_yuyue .icon-uniE900:before {
+    content: "\e900";
+}
+
+#main_teshe  .container span {
+    position: absolute;
+    top: 10px;
+    font-size: 34px;
+    margin: 0 10px 0 10px;
+    /*background-color: red;*/
+}
+#main_teshe  .container a {
+  text-decoration: none;
+}
+#main_teshe  .container a:hover {
+  color: #e92322;
+}
+/*================板块特色区域========*/
+/*===============预约区域============*/
+#main_yuyue {
+   padding: 20px 0;
+   border-bottom: 1px solid #c0c0c0;
+   /*background-color: #f50;*/
+}
+
+#main_yuyue .container .pull-left  .icon-uniE91D {  
+    font-size: 14px;
+}
+#main_yuyue .container  span {
+ color: #e92322;
+}
+#main_yuyue .container a {
+  text-decoration: none;
+  color: #e92322;
+}
+#main_yuyue .container .toubiao {
+  color: #333;
+  margin-right: 10px;
+}
+#main_yuyue .container .yyue {
+  color: #333;
+}
+#main_yuyue .container .yyue:hover {
+  color: #e92322;
+}
+
+/*===============预约区域============*/
+/*===============产品推荐============*/
+#main_tuijian {
+  background-color: #f0f0f0;
+  padding: 10px 0 0 0;
+  height: 50px;
+  border-bottom: 2px solid #c0c0c0;
+}
+#main_tuijian  .container .tj_toper {
+  height: 40px;
+   
+}
+#main_tuijian > .container >.tj_toper > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#main_tuijian > .container >.tj_toper > ul > li {
+  float: left;
+  margin-left: 30px;
+  height: 40px;
+}
+#main_tuijian > .container >.tj_toper > ul > li > a {
+   font-size: 20px;
+   text-decoration: none;
+   color:#333;
+   margin: 0;
+}
+#main_tuijian .bottom-line {
+
+   border-bottom: 2px solid red;
+}
+#main_tuijian .tj_toper .tj_ka a:active , #main_tuijian .tj_toper .tj_ka a:hover {
+  border-bottom: 2px solid #ff0;
+  padding: 13px;
+}
+#main_tuijian > .container >.tj_toper >.gengduo {
+   font-size: 20px;
+   text-decoration: none;
+   color:#e92322;
+   margin: 0;
+}
+
+
+
+
+
+#main_tuijian > .container > .tj_content {
+  height: 50px;
+  /*background-color: #d33;*/
+}
+/*===============产品推荐============*/
+
+
+
+
+
+
+
+
+
+
+
+/*css拓展*/
+.navbar-weijinsuo
+ {
+  background-color: #fff;
+  border-color: #f5f5f5;
+  position: relative;
+  margin-bottom: 0;
+  position: relative;
+}
+.navbar-weijinsuo
+ .navbar-brand {
+  color: #777;
+  height:80px;
+}
+.navbar-weijinsuo
+ .navbar-brand:hover,
+.navbar-weijinsuo
+ .navbar-brand:focus {
+  color: #5e5e5e;
+  background-color: transparent;
+}
+.navbar-weijinsuo
+ .navbar-text {
+  color: #777;
+}
+.navbar-weijinsuo
+ .navbar-nav > li > a {
+  color: #777;
+  line-height: 50px;
+  font-size: 14px;
+}
+.navbar-weijinsuo
+ .navbar-nav > li > a:hover,
+.navbar-weijinsuo
+ .navbar-nav > li > a:focus {
+  color: #333;
+  background-color: transparent;
+  border-bottom: 2px solid #e92322;
+}
+.navbar-weijinsuo
+ .navbar-nav > .active > a,
+.navbar-weijinsuo
+ .navbar-nav > .active > a:hover,
+.navbar-weijinsuo
+ .navbar-nav > .active > a:focus {
+  color: #555;
+  background-color: transparent;
+  border-bottom: 2px solid #ff0;
+}
+.navbar-weijinsuo
+ .navbar-nav > .disabled > a,
+.navbar-weijinsuo
+ .navbar-nav > .disabled > a:hover,
+.navbar-weijinsuo
+ .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+.navbar-weijinsuo
+ .navbar-toggle {
+  border-color: #ddd;
+  margin-top: 23px;
+}
+.navbar-weijinsuo
+ .navbar-toggle:hover,
+.navbar-weijinsuo
+ .navbar-toggle:focus {
+  background-color: #ddd;
+}
+.navbar-weijinsuo
+ .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+.navbar-weijinsuo
+ .navbar-collapse,
+.navbar-weijinsuo
+ .navbar-form {
+  border-color: #e7e7e7;
+}
+.navbar-weijinsuo
+ .navbar-nav > .open > a,
+.navbar-weijinsuo
+ .navbar-nav > .open > a:hover,
+.navbar-weijinsuo
+ .navbar-nav > .open > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+@media (max-width: 767px) {
+  .navbar-weijinsuo
+   .navbar-nav .open .dropdown-menu > li > a {
+    color: #777;
+  }
+  .navbar-weijinsuo
+   .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-weijinsuo
+   .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #333;
+    background-color: transparent;
+  }
+  .navbar-weijinsuo
+   .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-weijinsuo
+   .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-weijinsuo
+   .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+  }
+  .navbar-weijinsuo
+   .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-weijinsuo
+   .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-weijinsuo
+   .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+  }
+}
+.navbar-weijinsuo
+ .navbar-link {
+  color: #777;
+}
+.navbar-weijinsuo
+ .navbar-link:hover {
+  color: #333;
+}
+.navbar-weijinsuo
+ .btn-link {
+  color: #777;
+}
+.navbar-weijinsuo
+ .btn-link:hover,
+.navbar-weijinsuo
+ .btn-link:focus {
+  color: #333;
+}
+.navbar-weijinsuo
+ .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-weijinsuo
+ .btn-link:hover,
+.navbar-weijinsuo
+ .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-weijinsuo
+ .btn-link:focus {
+  color: #ccc;
+}
+/*Ã¥â€¦Â¬Ã¥â€¦Â±Ã¦Â Â·Ã¥Â¼ÂÃ¯Â¼Å¡Ã¨Â®Â°Ã¥Â¾â€”Ã§â€Â¨Ã§ÂºÂ¦Ã¥Â®Å¡Ã§â€Â¨Ã¤Â¸Å Ã¨â€¡ÂªÃ¥Â·Â±Ã§Å¡â€žÃ¥ÂÂÃ¥Â­â€” */
+body {
+  font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
+
+/*Ã¥Â­â€”Ã¤Â½â€œÃ¥â€ºÂ¾Ã¦Â â€¡Ã¨Â®Â¾Ã§Â½Â®========*/
+/*Ã¨Â®Â¾Ã§Â½Â®Ã¥ÂµÅ’Ã¥â€¦Â¥HTMLÃ¦â€“â€¡Ã¦Â¡Â£Ã§Å¡â€žÃ¥Â­â€”Ã¤Â½â€œ,Ã¨Â¿â„¢Ã©â€¡Å’Ã©ÂÂ¢Ã¯Â¼Å’Ã¦Ë†â€˜Ã¨Â®Â¾Ã§Â½Â®Ã¥Â¹Â¶Ã¥Â¼â€¢Ã§â€Â¨Ã¤Âºâ€ Ã¥â€ºâ€ºÃ§Â§ÂÃ¥Â­â€”Ã¤Â½â€œÃ¯Â¼Å’Ã¦ËœÂ¯Ã¤Â¸ÂºÃ¤Âºâ€ Ã¦â€“Â¹Ã¤Â¾Â¿Ã¦Ë†â€˜Ã¥ÂÂ¯Ã¤Â»Â¥Ã¥Å“Â¨Ã¤Â¸ÂÃ¥ÂÅ’Ã§Å¡â€žÃ¦ÂµÂÃ¨Â§Ë†Ã¥â„¢Â¨Ã§Â«Â¯Ã¥ÂÂ£Ã¤Â½Â¿Ã§â€Â¨Ã¤Â¸ÂÃ¥ÂÅ’Ã§Å¡â€žÃ¥Â­â€”Ã¤Â½â€œÃ¦Â Â·Ã¥Â¼Â*/
+@font-face {
+  font-family: "weijinsuo";
+  src:url("../font/MiFie-Web-Font.eot") format('embedded-opentype'),
+    url("../font/MiFie-Web-Font.svg") format('svg'),
+    url("../font/MiFie-Web-Font.ttf") format('TrueType'),
+    url("../font/MiFie-Web-Font.woff") format('woff');  
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: "weijinsuo" !important;
+  font-style: normal;
+}
+
+
+
+
+.icon-mobilephone::before {
+    content: "\e908";
+    font-size: 13px;
+}
+
+.icon-logo::before {
+    content: "\e93e";
+}
+.icon-icon::before {
+    content: "\e920";
+   
+}
+/*Ã¥Â­â€”Ã¤Â½â€œÃ¥â€ºÂ¾Ã¦Â â€¡Ã¨Â®Â¾Ã§Â½Â®===========*/

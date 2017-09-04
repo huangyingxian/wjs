@@ -1,0 +1,57 @@
+@charset "utf-8";
+/*=========头部板块========*/
+#header  .header  {
+	background-color: #1f1f1f;
+	color: #bababa;
+	height: 42px;
+}
+
+#header > .container-fluid > .container > .row > .h_logo > .logo {
+ position: relative;
+ text-decoration: none;
+ color: #e2e2e2;
+ font: 20px/42px "宋体" ;
+ margin-left: 16px;
+}
+#header > .container-fluid > .container > .row > .h_logo > .logo > i {
+	position: absolute;
+	color: #ffce00;
+	font-size: 24px;
+    margin-left: -25px;
+    margin-top: -3px;
+}
+
+#header > .container-fluid > .container > .row > .h_table {
+	float: left;
+	position: ;
+}
+#header > .container-fluid > .container > .row > .h_table > .tables {
+	height: 42px;
+}
+
+#header > .container-fluid > .container > .row > .h_table >  ul > li > a > span {
+	font-size: 10px;
+}
+
+
+
+
+
+
+
+/*=========头部板块结束========*/
+/*=================*/
+
+/*=================*/
+/*=================*/
+
+/*=================*/
+/*=================*/
+
+/*=================*/
+/*=================*/
+
+/*=================*/
+/*=================*/
+
+/*=================*/
